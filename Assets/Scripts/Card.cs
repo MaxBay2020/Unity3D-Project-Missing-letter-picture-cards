@@ -68,6 +68,8 @@ public class Card : MonoBehaviour
             DisplayCorrectVowel();
             // 3. move on to the next card
             StartCoroutine(ShowNextCard(1.0f));
+            // 4. score increments
+            GameManager._instance.ScoreIncrement();
         }
         else
         {
@@ -94,7 +96,10 @@ public class Card : MonoBehaviour
 
             // 3. move on to the next card
             StartCoroutine(ShowNextCard(1.0f));
-            
+
+            // 4. score increments
+            GameManager._instance.ScoreIncrement();
+
         }
         else
         {
