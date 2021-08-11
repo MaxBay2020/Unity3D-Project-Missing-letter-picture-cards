@@ -52,5 +52,8 @@ public class GameManager : MonoBehaviour
 
         // 3. activate the score panel
         scorePanel.GetComponent<Animator>().enabled = true;
+
+        // 4. play "congratulations" audio
+        SoundManager._instance.CongratsClipPlay();
     }
 }

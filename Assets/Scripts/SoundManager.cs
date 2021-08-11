@@ -5,7 +5,7 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
     private AudioSource audioSource;
-    public AudioClip buttonClickedClip;
+    public AudioClip buttonClickedClip, congratsClip;
 
     public static SoundManager _instance;
     private void Awake()
@@ -21,5 +21,10 @@ public class SoundManager : MonoBehaviour
     public void ButtonClickedClipPlay()
     {
         audioSource.PlayOneShot(buttonClickedClip);
+    }
+
+    public void CongratsClipPlay()
+    {
+        audioSource.PlayOneShot(congratsClip);
     }
 }
